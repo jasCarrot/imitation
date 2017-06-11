@@ -117,3 +117,31 @@ p {
 .img {
 
 }
+
+.box {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 70px;
+    margin-top: 8px;
+    margin-left: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.box>div:first-child{
+    filter: blur(3px);
+    background-size: cover;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    left: -10px;
+    top: -10px;
+    position: absolute;
+}
+
+.boxtext {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+}
