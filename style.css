@@ -38,8 +38,8 @@ a:hover {
 }
 
 .list {
-    position: relative;
-    float: left;
+    position: fixed;
+    /*float: left;*/
     margin-left: 26px;
     margin-top: 14px;
     font-size: 0.8em;
@@ -193,7 +193,7 @@ p {
     color: rgba(38, 38, 38, 0.66);
 }
 
-#ipt2 {
+.ipt2 {
     text-align: right;
 }
 
@@ -245,16 +245,34 @@ p {
     z-index: 2;
 }
 
-#modify {
+.modify {
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
-#mod-font {
+.mod-font {
     text-align: end;
 }
 
 #letdown {
     height: 42%;
+}
+
+#bot {
+    position: relative;
+    width: calc(100% - 18px);
+    margin: 10px;
+    height: 800px;
+    background-color: red;
+}
+
+#bot > div:first-child{
+    float: left;
+    display: inline;
+}
+
+#all-acq {
+    float: right;
+    display: inline;
 }
